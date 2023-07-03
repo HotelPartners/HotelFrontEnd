@@ -1,0 +1,14 @@
+.mid
+{
+
+    background-color: bisque;
+    height: 180px;
+    width: 180px;
+    margin: 10px;
+    padding-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4);
+}
+.mid:hover {
+    background-color: rgb(231, 231, 231);
+  }
