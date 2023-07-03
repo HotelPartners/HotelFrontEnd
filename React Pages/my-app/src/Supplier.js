@@ -14,12 +14,15 @@ function Supplier() {
                 <h2>Order Records</h2>
                 <div className="table-responsive">
                     <table className="table table-bordered">
+                        <thead>
                         <tr>
                             <th>Supplier Id</th>
                             <th>Supplier Name</th>
                             <th>Address</th>
                             <th>Contact No.</th>
                         </tr>
+                        </thead>
+                        <tbody>
                         <tr>
                             <td>Supplier Id</td>
                             <td>Supplier Name</td>
@@ -38,6 +41,7 @@ function Supplier() {
                             <td>Address</td>
                             <td>Contact No.</td>
                         </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>

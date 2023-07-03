@@ -14,6 +14,7 @@ function BillRecords() {
                 <h2>Bill Records</h2>
                 <div className="table-responsive">
                     <table className="table table-bordered">
+                        <thead>
                         <tr>
                             <th>Order Id</th>
                             <th>Total Amount</th>
@@ -22,6 +23,8 @@ function BillRecords() {
                             <th>Date</th>
                             <th>Session</th>
                         </tr>
+                        </thead>
+                        <tbody>
                         <tr>
                             <td>Order Id 1</td>
                             <td>Total Amount 1</td>
@@ -46,6 +49,7 @@ function BillRecords() {
                             <td>Date 1</td>
                             <td>Session 1</td>
                         </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
