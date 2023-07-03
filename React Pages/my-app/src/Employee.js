@@ -14,6 +14,7 @@ function Employee() {
                 <h2>Order Records</h2>
                 <div className="table-responsive">
                     <table className="table table-bordered">
+                        <thead>
                         <tr>
                             <th>Employee Id</th>
                             <th>Employee Name</th>
@@ -23,6 +24,8 @@ function Employee() {
                             <th>Department</th>
                             <th>Joining Date</th>
                         </tr>
+                        </thead>
+                        <tbody>
                         <tr>
                             <td>Employee Id</td>
                             <td>Employee Name</td>
@@ -50,6 +53,7 @@ function Employee() {
                             <td>Department</td>
                             <td>Joining Date</td>
                         </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>

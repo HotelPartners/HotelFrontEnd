@@ -14,6 +14,7 @@ function CustORecords() {
                 <h2>Order Records</h2>
                 <div className="table-responsive">
                     <table className="table table-bordered">
+                        <thead>
                         <tr>
                             <th>Order Id</th>
                             <th>Items</th>
@@ -23,6 +24,8 @@ function CustORecords() {
                             <th>Date</th>
                             <th>Status</th>
                         </tr>
+                        </thead>
+                        <tbody>
                         <tr>
                             <td>Order Id 1</td>
                             <td>Items</td>
@@ -50,6 +53,7 @@ function CustORecords() {
                             <td>Date 1</td>
                             <td>Status 1</td>
                         </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>

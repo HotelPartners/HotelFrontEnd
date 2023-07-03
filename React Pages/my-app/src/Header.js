@@ -27,8 +27,8 @@ function Header() {
         </li>
       </ul>
     </div>
-    <button className="btn mybtn">LOGIN</button>
-    <button className="btn mybtn">SIGN UP</button>
+      <button className="btn btn-warning m-2">LOGIN</button>
+      <button className="btn btn-warning m-2">SIGN UP</button>
   </div>
 </nav>
     </>);

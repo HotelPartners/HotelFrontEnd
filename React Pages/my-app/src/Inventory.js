@@ -14,6 +14,7 @@ function Inventory() {
                 <h2>Order Records</h2>
                 <div className="table-responsive">
                     <table className="table table-bordered">
+                        <thead>
                         <tr>
                             <th>Item Id</th>
                             <th>Item Name</th>
@@ -21,6 +22,8 @@ function Inventory() {
                             <th>Total Amount</th>
                             <th colSpan={2}>Date</th>
                         </tr>
+                        </thead>
+                        <tbody>
                         <tr>
                             <td>Item Name</td>
                             <td>Item Id</td>
@@ -45,6 +48,7 @@ function Inventory() {
                             <td>Date</td>
                             <td><button className="btn btn-primary">Edit</button></td>
                         </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>

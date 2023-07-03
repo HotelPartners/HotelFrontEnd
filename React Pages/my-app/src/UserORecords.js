@@ -14,6 +14,7 @@ function UserORecords() {
                 <h2>Order Records</h2>
                 <div className="table-responsive">
                     <table className="table table-bordered">
+                        <thead>
                         <tr>
                             <th>Order Id</th>
                             <th>Items</th>
@@ -23,9 +24,11 @@ function UserORecords() {
                             <th>Date</th>
                             <th>Session</th>
                         </tr>
+                        </thead>
+                        <tbody>
                         <tr>
                             <td>Order Id 1</td>
-                            <th>Items</th>
+                            <td>Items</td>
                             <td>Total Amount 1</td>
                             <td>Category 1</td>
                             <td>Payment Method 1</td>
@@ -34,7 +37,7 @@ function UserORecords() {
                         </tr>
                         <tr>
                             <td>Order Id 1</td>
-                            <th>Items</th>
+                            <td>Items</td>
                             <td>Total Amount 1</td>
                             <td>Category 1</td>
                             <td>Payment Method 1</td>
@@ -43,13 +46,14 @@ function UserORecords() {
                         </tr>
                         <tr>
                             <td>Order Id 1</td>
-                            <th>Items</th>
+                            <td>Items</td>
                             <td>Total Amount 1</td>
                             <td>Category 1</td>
                             <td>Payment Method 1</td>
                             <td>Date 1</td>
                             <td>Session 1</td>
                         </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
