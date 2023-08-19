@@ -1,49 +1,101 @@
-import Footer from "./Footer";
-import Header from "./Header";
-import './Admin.css'
+import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCol, MDBRow } from "mdb-react-ui-kit";
 
 function Admin() {
-    return (  
-
-        <>
-        <div>
-        <Header />
-        </div>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <div style={{ display: "flex",marginLeft:"70px",marginRight:"70px" }}>
-  <div className="mid" >
-    <h2 style={{textAlign:"center"}}>Menu</h2>
-  </div>
-  <div className="mid" >
-  <h2 style={{textAlign:"center"}}>Tables</h2>
-  </div>
-  <div className="mid" >
-  <h2 style={{textAlign:"center"}}>Access manager</h2>
-  </div>
-  <div className="mid" >
-  <h2 style={{textAlign:"center"}}>Inventory</h2>
-  </div>
-  <div className="mid" >
-  <h2 style={{textAlign:"center"}}>Bills</h2>
-  </div>
-  <div className="mid" >
-  <h2 style={{textAlign:"center"}}>Suppliers</h2>
-  </div>
-  <div className="mid" >
-  <h2 style={{textAlign:"center"}}>Customers</h2>
-  </div>
-  <div className="mid" >
-  <h2 style={{textAlign:"center"}}>Employee Data</h2>
-  </div>
-</div>
-
-        <Footer />
-        </>
-    );
+  return (<>
+     <MDBRow className='row-cols-1 row-cols-md-5 g-6 m-3'>
+      <MDBCol className="hover-shadow my-3">
+        <MDBCard alignment="center">
+          <MDBCardImage
+            src='./img/burger.png'
+            alt='...'
+            position='top' style={{height:"250px"}}
+          />
+          <MDBCardBody>
+          <MDBBtn href='#'>Menu</MDBBtn>
+            
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
+      <MDBCol className="hover-shadow my-3">
+        <MDBCard alignment="center">
+          <MDBCardImage
+            src='./img/restaurant.png'
+            alt='...'
+            position='top' style={{height:"250px"}}
+          />
+          <MDBCardBody className="hover-shadow">
+          <MDBBtn href='#'>Table Manager</MDBBtn>
+            
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
+      <MDBCol className="hover-shadow my-3">
+        <MDBCard alignment="center">
+          <MDBCardImage
+            src='./img/inventory.png'
+            alt='...'
+            position='top' style={{height:"250px"}}
+          />
+          <MDBCardBody>
+          <MDBBtn href='#'>Inventory</MDBBtn>
+           
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
+      <MDBCol className="hover-shadow my-3">
+        <MDBCard alignment="center">
+          <MDBCardImage
+            src='./img/invoice.png'
+            alt='...'
+            position='top' style={{height:"250px"}}
+          />
+          <MDBCardBody>
+          <MDBBtn href='#'>Bill Records</MDBBtn>
+           
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
+      <MDBCol className="hover-shadow my-3">
+        <MDBCard alignment="center">
+          <MDBCardImage
+            src='./img/supplier.png'
+            alt='...'
+            position='top' style={{height:"250px"}}
+          />
+          <MDBCardBody>
+          <MDBBtn href='#'>Supplier Details</MDBBtn>
+            
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
+      <MDBCol className="hover-shadow my-3">
+        <MDBCard alignment="center">
+          <MDBCardImage
+            src='./img/service.png'
+            alt='...'
+            position='top' style={{height:"250px"}}
+          />
+          <MDBCardBody>
+          <MDBBtn href='#'>Customer Details</MDBBtn>
+            
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
+      <MDBCol className="hover-shadow my-3">
+        <MDBCard alignment="center">
+          <MDBCardImage
+            src='./img/employee.png'
+            alt='...'
+            position='top' style={{height:"250px"}}
+          />
+          <MDBCardBody>
+            <MDBBtn href='#'>Employee Details</MDBBtn>
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
+    </MDBRow>
+    
+  </>);
 }
 
 export default Admin;

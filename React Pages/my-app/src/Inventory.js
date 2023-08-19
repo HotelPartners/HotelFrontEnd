@@ -3,15 +3,10 @@ import Header from "./Header";
 
 function Inventory() {
     return ( <>
-    <Header />
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
         <center>
 
             <div className="container">
-                <h2>Order Records</h2>
+                <h2>Inventory</h2>
                 <div className="table-responsive">
                     <table className="table table-bordered">
                         <thead>
@@ -53,7 +48,6 @@ function Inventory() {
                 </div>
             </div>
         </center>
-        <Footer />
     </> );
 }
 

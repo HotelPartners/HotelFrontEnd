@@ -1,13 +1,6 @@
-import Footer from "./Footer";
-import Header from "./Header";
 
 function Supplier() {
     return ( <>
-    <Header />
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
         <center>
 
             <div className="container">
@@ -46,7 +39,6 @@ function Supplier() {
                 </div>
             </div>
         </center>
-        <Footer />
     </> );
 }
 

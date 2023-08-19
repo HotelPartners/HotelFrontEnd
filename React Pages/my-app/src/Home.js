@@ -1,17 +1,11 @@
-import Footer from "./Footer";
-import Header from "./Header";
 import './myApp.css';
 
 function Home() {
     return (<>
-        <Header />
         <div className="container">
             <center>
                 <div className="myHome">
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
+                    
                     <h1>Welcome to FOOD-E-STHAAN</h1>
                     <p>Food-E-Sthaan is India's premier luxury hospitality brand with an ever-growing       presence across the country.
                         Known for our bespoke experiences and signature hospitality, we are ushering in new standards of opulence in the 4-star and 5-star hotel industry. We believe that a luxurious stay should indulge and satiate all the senses of an individual; resulting in an unforgettable experience. Want to test us out? Our curated stays are a testament to this fact.</p>
@@ -39,7 +33,6 @@ function Home() {
                 </button>
             </div>
         </div>
-        <Footer/>
     </>);
 }
 

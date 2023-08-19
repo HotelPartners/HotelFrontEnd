@@ -1,13 +1,7 @@
-import Footer from "./Footer";
-import Header from "./Header";
 
 function BillRecords() {
     return (<>
-        <Header />
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+        
         <center>
 
             <div className="container">
@@ -54,7 +48,6 @@ function BillRecords() {
                 </div>
             </div>
         </center>
-        <Footer />
     </>);
 }
 

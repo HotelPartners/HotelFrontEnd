@@ -1,17 +1,10 @@
-import Footer from "./Footer";
-import Header from "./Header";
 
 function CustomerDetails() {
     return ( <>
-     <Header />
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
         <center>
 
             <div className="container">
-                <h2>Order Records</h2>
+                <h2>Customer Details</h2>
                 <div className="table-responsive">
                     <table className="table table-bordered">
                         <thead>
@@ -46,7 +39,6 @@ function CustomerDetails() {
                 </div>
             </div>
         </center>
-        <Footer />
     </> );
 }
 

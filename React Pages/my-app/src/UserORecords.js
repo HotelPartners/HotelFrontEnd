@@ -1,15 +1,7 @@
-import Footer from "./Footer";
-import Header from "./Header";
 
 function UserORecords() {
     return ( <>
-    <Header />
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
         <center>
-
             <div className="container">
                 <h2>Order Records</h2>
                 <div className="table-responsive">
@@ -58,7 +50,6 @@ function UserORecords() {
                 </div>
             </div>
         </center>
-        <Footer />
     </> );
 }
 

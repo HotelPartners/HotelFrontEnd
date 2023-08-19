@@ -1,13 +1,7 @@
-import Footer from "./Footer";
-import Header from "./Header";
+
 
 function CustORecords() {
     return ( <>
-    <Header />
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
         <center>
 
             <div className="container">
@@ -58,7 +52,6 @@ function CustORecords() {
                 </div>
             </div>
         </center>
-        <Footer />
     </> );
 }
 

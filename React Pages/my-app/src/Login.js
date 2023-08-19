@@ -1,110 +1,36 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import { MDBBtn, MDBCard, MDBCardBody, MDBCheckbox, MDBCol, MDBContainer,  MDBInput, MDBRow } from 'mdb-react-ui-kit'
 
-function Login()
-{
-    // const [name, setName] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [datetime, setDatetime] = useState('');
-    // const [noOfPeople, setNoOfPeople] = useState('1');
-    // const [specialRequest, setSpecialRequest] = useState('');
-  
-    // // handle form submission
-    // const handleSubmit = (e) => {
-    //   e.preventDefault();
-    return (  <div className="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
-    <div className="row g-0">
-      <div className="col-md-6">
-        <div className="video">
-          <button type="button" className="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-            <span></span>
-          </button>
-        </div>
-      </div>
-      <div className="col-md-6 bg-dark d-flex align-items-center">
-        <div className="p-5 wow fadeInUp" data-wow-delay="0.2s">
-          <h5 className="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
-          <h1 className="text-white mb-4">Book A Table Online</h1>
-          <form >
-            <div className="row g-3">
-              <div className="col-md-6">
-                <div className="form-floating">
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="name"
-                    placeholder="Your Name"
-                  //  value={name}
-                 //   onChange={(e) => setName(e.target.value)}
-                  />
-                  <label htmlFor="name">Your Name</label>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="form-floating">
-                  <input
-                    type="email"
-                    className="form-control"
-                    id="email"
-                    placeholder="Your Email"
-                  //  value={email}
-                   // onChange={(e) => setEmail(e.target.value)}
-                  />
-                  <label htmlFor="email">Your Email</label>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="form-floating date" id="date3" data-target-input="nearest">
-                  <input
-                    type="text"
-                    className="form-control datetimepicker-input"
-                    id="datetime"
-                    placeholder="Date & Time"
-                   // value={datetime}
-                   // onChange={(e) => setDatetime(e.target.value)}
-                    data-target="#date3"
-                    data-toggle="datetimepicker"
-                  />
-                  <label htmlFor="datetime">Date & Time</label>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="form-floating">
-                  <select
-                    className="form-select"
-                    id="select1"
-                  //  value={noOfPeople}
-                 //   onChange={(e) => setNoOfPeople(e.target.value)}
-                  >
-                    <option value="1">People 1</option>
-                    <option value="2">People 2</option>
-                    <option value="3">People 3</option>
-                  </select>
-                  <label htmlFor="select1">No Of People</label>
-                </div>
-              </div>
-              <div className="col-12">
-                <div className="form-floating">
-                  <textarea
-                    className="form-control"
-                    placeholder="Special Request"
-                    id="message"
-                    style={{ height: '100px' }}
-                   // value={specialRequest}
-                   // onChange={(e) => setSpecialRequest(e.target.value)}
-                  ></textarea>
-                  <label htmlFor="message">Special Request</label>
-                </div>
-              </div>
-              <div className="col-12">
-                <button className="btn btn-primary w-100 py-3" type="submit">Book Now</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-           )
+function Login() {
+  return (<>
+    <MDBContainer fluid style={{backgroundColor : '#FFBD33'}}>
+
+      <MDBRow className='d-flex justify-content-center align-items-center h-100'>
+        <MDBCol col='12'>
+
+          <MDBCard className='bg-white my-5 mx-auto' style={{ borderRadius: '1rem', maxWidth: '500px' }}>
+            <MDBCardBody className='p-5 w-100 d-flex flex-column'>
+
+              <h2 className="fw-bold mb-2 text-center">Log In</h2>
+              <p className="text-white-50 mb-3">Please enter your login and password!</p>
+
+              <MDBInput wrapperClass='mb-4 w-100' label='Email address' id='formControlLg' type='email' size="lg" />
+              <MDBInput wrapperClass='mb-4 w-100' label='Password' id='formControlLg' type='password' size="lg" />
+
+              <MDBCheckbox name='flexCheck' id='flexCheckDefault' className='mb-4' label='Remember password' />
+
+              <MDBBtn size='lg'>
+                Login
+              </MDBBtn>
+            </MDBCardBody>
+          </MDBCard>
+
+        </MDBCol>
+      </MDBRow>
+
+    </MDBContainer>
+  </>
+  )
 }
 
 export default Login
@@ -112,4 +38,3 @@ export default Login
 
 
 
-  

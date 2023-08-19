@@ -1,25 +1,46 @@
 import React from 'react';
-import './tablerc.css'
-import logoImage from './logo.png';
+import Header from './Header';
+import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCheckbox, MDBCol, MDBContainer, MDBIcon, MDBInput, MDBRow } from 'mdb-react-ui-kit';
+import Footer from './Footer';
 
 function SignUp() {
-    return ( <><div className="container1">
-    <div className="mainbody">
-      <h1 style={{marginLeft:"160px"}}>Sign Up</h1>
-      <input className="fn" type="text" placeholder="Enter First Name" />
-      <input className="ln" type="text" placeholder="Enter Last Name" />
-      <input className="email" type="text" placeholder="Enter Address Name" />
-      <input className="email1" type="text" min="10" max="10" placeholder="Enter Email Name" />
-      <input className="Phone" type="text" min="10" max="10" placeholder="Enter Phone NO" />
-      <input className="Password1" type="password" min="1" max="5" placeholder="Enter Password" />
-      <input className="Password2" type="password" min="1" max="5" placeholder="Confirm Password" />
+  return (<>
+    <MDBContainer fluid style={{backgroundColor : '#FFBD33'}}>
 
-      <input className="reservebutton" type="submit" value={"Register"} />
-    </div>
-    <img src={logoImage} alt="logo" className="logo" />
+      <MDBRow className='d-flex justify-content-center align-items-center h-100'>
+        <MDBCol col='12'>
 
-    <h2>FOOD-E-STAAN</h2>
-  </div></> );
+          <MDBCard className='bg-white my-5 mx-auto' style={{ borderRadius: '1rem', maxWidth: '500px' }}>
+            <MDBCardBody className='p-5 w-100 d-flex flex-column'>
+
+              <h2 className="fw-bold mb-2 text-center">Sign Up</h2>
+
+              <MDBRow>
+            <MDBCol col='6'>
+              <MDBInput wrapperClass='mb-4' label='First name' id='form1' type='text'/>
+            </MDBCol>
+
+            <MDBCol col='6'>
+              <MDBInput wrapperClass='mb-4' label='Last name' id='form1' type='text'/>
+            </MDBCol>
+          </MDBRow>
+
+          <MDBInput wrapperClass='mb-4' label='Email' id='form1' type='email'/>
+          <MDBInput wrapperClass='mb-4' label='Phone no.' id='form1' type='number'/>
+          <MDBInput wrapperClass='mb-4' label='Password' id='form1' type='password'/>
+          <MDBInput wrapperClass='mb-4' label='Confirm Password' id='form1' type='password'/>
+
+              <MDBBtn size='md'>
+                Sign Up
+              </MDBBtn>
+            </MDBCardBody>
+          </MDBCard>
+
+        </MDBCol>
+      </MDBRow>
+
+    </MDBContainer>
+  </>);
 }
 
 export default SignUp;
